@@ -14,8 +14,13 @@ print("=" * 40)
 print("\n--- Exercise 1: Variables and f-strings ---")
 # TODO: create name, age, city variables
 
+name = "Erik"
+age = 32
+city = "Burlington"
+
 # TODO: print them with an f-string
 
+print(f"My name is {name}, I'm {age}, and I live in {city}.")
 
 # ── EXERCISE 2 ──────────────────────────────
 # Python math. Fill in each blank with the correct operator.
@@ -26,12 +31,19 @@ a = 17
 b = 5
 
 # TODO: print a plus b
+print(a + b)
 # TODO: print a minus b
+print(a - b)
 # TODO: print a times b
+print(a * b)
 # TODO: print a divided by b (regular division)
+print(a / b)
 # TODO: print a floor-divided by b (no remainder)
+print(a // b)
 # TODO: print the remainder of a divided by b
+print(a % b)
 # TODO: print a to the power of b
+print(a ** b)
 
 
 # ── EXERCISE 3 ──────────────────────────────
@@ -47,6 +59,13 @@ val5 = None
 
 # TODO: print the type of each variable above (5 lines)
 
+print(type(val1))
+print(type(val2))
+print(type(val3))
+print(type(val4))
+print(type(val5))
+
+
 
 # ── EXERCISE 4 ──────────────────────────────
 # Type conversion. Convert between types as instructed.
@@ -57,10 +76,22 @@ count_str = "7"
 score_int = 85
 
 # TODO: Convert price_str to a float, store it as price_float, print it
+price_float = float(price_str)
+print(price_float)
+
 # TODO: Convert count_str to an int, store it as count_int, print it
+count_int = int(count_str)
+print(count_int)
+
 # TODO: Multiply price_float * count_int and print the total
+total = price_float * count_int
+print(total)
+
 # TODO: Convert score_int to a string, store it as score_str
+score_str = str(score_int)
+
 # TODO: Print: "Your score: " + score_str  (use concatenation, not f-string)
+print("Your score: " + score_str)
 
 
 # ── EXERCISE 5 ──────────────────────────────
@@ -69,8 +100,14 @@ score_int = 85
 
 print("\n--- Exercise 5: User Input ---")
 # TODO: Ask for first number using input(), convert to int
+num1 = int(input("Enter the first number: "))
+
 # TODO: Ask for second number using input(), convert to int
+num2 = int(input("Enter the second number: "))
+
 # TODO: Add them and print: "X + Y = Z"
+print(f"{num1} + {num2} = {num1 + num2}")
+
 
 
 # ── EXERCISE 6 — CHALLENGE ──────────────────
@@ -81,6 +118,14 @@ print("\n--- Exercise 5: User Input ---")
 
 print("\n--- Exercise 6: Age Calculator ---")
 # TODO: implement the age calculator
+birth_year = int(input("Enter your birth year: "))
+current_year = 2026
+age = current_year - birth_year
+if age > 0:
+    print(f"You are {age} years old.")
+else:
+    print(f"You will turn {abs(age)} this year.")
+
 
 
 print("\n" + "=" * 40)
